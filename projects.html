@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- GOOGLE TAG (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-J5GVK8TES9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-J5GVK8TES9");
+    </script>
+
     <!-- META CONTENT -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -107,7 +122,9 @@
               <li class="nav-item">
                 <p class="offcanvas-subtext" style="padding-bottom: 7%">MENU</p>
               </li>
-              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
               <li class="nav-item"><a class="nav-link" href="#">About</a></li>
               <li class="nav-item">
                 <a class="nav-link" href="projects.html">Projects</a>
