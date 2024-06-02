@@ -1,0 +1,267 @@
+/* ****************** OVERALL FORMATTING ****************** */
+body {
+  overflow: hidden;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Noto Serif", serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+/* ****************** HERO CONTAINER ****************** */
+.hero-heading {
+  padding-bottom: 1rem;
+}
+
+.hero-subheading {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.hero-para {
+  font-size: 14px;
+  letter-spacing: 0.7px;
+  line-height: 25px;
+  font-weight: 300;
+}
+
+.hero-horizontal-line {
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  margin-top: 10px;
+}
+
+.hero-row {
+  height: 85vh !important;
+}
+
+.hero-profile-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url("assets/images/Y.jpeg"); /* Path to your image */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.hero-profile-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: auto;
+  transform: translate(-50%, -50%);
+  max-width: 50%;
+  max-height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
+/* ****************** NAVIGATION BAR ****************** */
+.icon-top-left {
+  font-size: 1.6rem !important;
+  color: #000000;
+}
+
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus,
+.navbar-toggler-icon:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler-icon {
+  display: none;
+}
+
+.nav-icon {
+  /* color: #de840c; */
+}
+
+.navbar-toggler .fa-align-right {
+  font-size: 1.5rem;
+}
+
+.navbar-close-toggler {
+  border: none;
+  outline: none;
+  color: #000000;
+}
+
+.navbar-close-toggler:focus,
+.navbar-close-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn-close {
+  /* filter: invert(1); */
+  opacity: 1 !important;
+}
+
+.btn-close:focus {
+  box-shadow: none !important;
+}
+
+/* NAVIGATION BAR OFFCANVAS CUSTOM FORMATTING */
+.offcanvas {
+  overflow: hidden;
+  padding: 5%;
+  background-color: rgba(255, 255, 255, 1);
+  color: #000000;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.offcanvas-header .btn-close {
+  padding: 4% !important;
+}
+
+.offcanvas-body {
+  overflow: hidden !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+.offcanvas-body .nav-link {
+  font-family: "Alegreya", serif;
+  font-weight: 800;
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: left;
+  text-decoration: none;
+}
+
+.offcanvas-body .nav-link:hover {
+}
+
+.offcanvas.offcanvas-end {
+  width: 46vw !important;
+  border: none !important;
+}
+
+.offcanvas-social-icons {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.offcanvas-social-icons .offcanvas-social-icon {
+  color: #000000;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.offcanvas-social-icons .offcanvas-social-icon:hover {
+}
+
+.offcanvas-subtext {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 600;
+}
+
+.offcanvas-para {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  margin-bottom: 0.2rem !important;
+  line-height: -0.1px !important;
+}
+
+.offcanvas-social-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.offcanvas-social-text span {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #000000;
+  font-size: 0.8rem;
+  transform: rotate(270deg);
+  display: block;
+  margin-bottom: -10px;
+}
+
+/* MEDIA QUERIES */
+
+/* MEDIUM SCREENS */
+@media (min-width: 426px) and (max-width: 991.98px) {
+  .offcanvas.offcanvas-end {
+    width: 50vw !important;
+    border: none !important;
+  }
+}
+
+/* SMALLER SCREENS */
+@media (max-width: 425.98px) {
+  body {
+    overflow: scroll;
+  }
+  
+  .container .hero-row {
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 1rem !important;
+  }
+
+  .hero-profile-container {
+    height: 200px;
+    width: 100%;
+    overflow: visible;
+  }
+
+  .hero-profile-image {
+    position: static;
+    transform: none;
+    width: 100vw;
+    height: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .offcanvas.offcanvas-end {
+    width: 100vw !important;
+    border: none !important;
+  }
+}
