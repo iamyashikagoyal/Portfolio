@@ -166,6 +166,16 @@ p {
   text-decoration: none;
 }
 
+.header-main-text {
+  font-family: "Alegreya", serif;
+  font-weight: 800;
+  color: #000000;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
 .offcanvas-body .nav-link:hover {
 }
 
@@ -222,10 +232,35 @@ p {
   margin-bottom: -10px;
 }
 
-/* MEDIA QUERIES */
+/* ****************** MEDIA QUERIES ****************** */
 
 /* MEDIUM SCREENS */
 @media (min-width: 426px) and (max-width: 991.98px) {
+  body {
+    overflow: scroll;
+  }
+
+  .container .hero-row {
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .hero-profile-container {
+    height: 250px;
+    width: 100%;
+    overflow: visible;
+  }
+
+  .hero-profile-image {
+    position: static;
+    transform: none;
+    width: 100vw;
+    height: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+
   .offcanvas.offcanvas-end {
     width: 50vw !important;
     border: none !important;
@@ -237,7 +272,7 @@ p {
   body {
     overflow: scroll;
   }
-  
+
   .container .hero-row {
     border: none !important;
     border-radius: 0 !important;
