@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- GOOGLE TAG (gtag.js) -->
+    <!-- ****************** GOOGLE TAG (gtag.js) ****************** -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-J5GVK8TES9"
@@ -16,10 +16,10 @@
       gtag("config", "G-J5GVK8TES9");
     </script>
 
-    <!-- META CONTENT -->
+    <!-- ****************** META CONTENT ****************** -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects | Yashika Goyal</title>
+    <title>Publications | Yashika Goyal</title>
     <meta name="author" content=" Yashika Goyal" />
     <meta name="title" content="Yashika Goyal" />
     <meta
@@ -33,10 +33,40 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="language" content="English" />
 
-    <!-- LINKING STYLESHEETS -->
+    <!-- ****************** OPEN GRAPH TAGS ****************** -->
+    <meta property="og:title" content="Yashika Goyal" />
+    <meta
+      property="og:description"
+      content="Welcome to Yashika Goyal's Portfolio. Yashika is a dedicated Master in Applied Data Science student at USC Viterbi School of Engineering, set to graduate in May 2025. Aspiring to excel as a Data Scientist, Machine Learning Engineer, or AI Engineer, Yashika has authored multiple research papers and amassed significant experience through prestigious internships. Actively engaged in hackathons and leadership roles, including serving as IEEE Computer Society Chairperson & Webmaster, she is committed to pioneering technology-driven advancements."
+    />
+    <meta property="og:image" content="assets/images/Y.jpeg" />
+    <meta property="og:url" content="https://yashikagoyal.us/" />
+    <meta property="og:type" content="website" />
+
+    <!-- ****************** FAVICON ****************** -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+    <!-- ****************** LINKING STYLESHEETS ****************** -->
     <link rel="stylesheet" href="style.css" />
 
-    <!-- LINKING FONTS -->
+    <!-- ****************** LINKING FONTS ****************** -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -44,7 +74,7 @@
       rel="stylesheet"
     />
 
-    <!-- LINKING CDNs -->
+    <!-- ****************** LINKING CDNs ****************** -->
     <!-- BOOTSTRAP -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -58,22 +88,46 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- ****************** CUSTOM PAGE STYLING ****************** -->
     <style>
       body {
         overflow: scroll;
       }
 
       .header {
-        text-align: center;
+        text-align: center !important;
         padding: 4rem;
       }
 
-      .card-container {
+      .custom-card {
+        border: none !important;
         padding: 1rem;
       }
 
-      .card-body {
+      .custom-card-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .custom-card-header img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .custom-card-body {
         padding-top: 0.8rem;
+      }
+
+      .custom-card-body .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .read-button:hover {
+        color: #FFFFFF;
+        background-color: #000000;
       }
     </style>
   </head>
@@ -92,7 +146,7 @@
     >
       <!-- ****************** NAVIGATION BRAND LOGO LEFT ****************** -->
       <div class="container-fluid">
-        <a class="navbar-brand icon-top-left" href="#"> </a>
+        <a class="navbar-brand" href="index.html"><i class="fa-solid fa-house fa-xs"></i></a>
 
         <!-- ****************** NAVIGATION TOGGLE ICON ****************** -->
         <button
@@ -149,6 +203,7 @@
                 </p>
               </li>
             </ul>
+
             <!-- OFFCANVAS BODY SOCIAL MEDIA ICONS -->
             <div class="offcanvas-social-icons">
               <a
@@ -175,6 +230,7 @@
               <a href="tel:+1(213)2728964" class="offcanvas-social-icon"
                 ><i class="fa-solid fa-phone"></i
               ></a>
+
               <!-- OFFCANVAS BODY SOCIAL TEXT HORIZANTAL -->
               <div class="offcanvas-social-text offcanvas-subtext">
                 <span>SOCIAL</span>
@@ -187,34 +243,78 @@
 
     <div class="header">
       <h1 class="header-main-text">Publications</h1>
-      <p class="hero-subheading">Bridging Theory & Reality: Explore insightful reflections and practical insights in the world of data</p>
+      <p class="hero-subheading">
+        Bridging Theory & Reality: Explore insightful reflections and practical
+        insights in the world of data
+      </p>
     </div>
 
     <div class="container">
       <div class="row">
         <div class="col-lg-4 col-md-4 col-sm-6">
-          <div class="card-container shadow-lg">
-            <img
-              src="https://source.unsplash.com/random/400x225"
-              class="card-img-top"
-              alt="Card Image"
-            />
-            <div class="card-body">
+          <div class="custom-card shadow-lg">
+            <div class="custom-card-header">
+              <img
+                src="https://source.unsplash.com/random/400x225"
+                alt="Card Image"
+              />
+            </div>
+            <div class="custom-card-body">
               <p class="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
               </p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-sm btn-outline-secondary"
-                  >
-                    Read
-                  </button>
-                </div>
-                <small class="text-body-secondary">Conference Name</small>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-sm btn-outline-secondary read-button">Read</a>
+                <small class="text-body-secondary align-self-end"
+                  >Conference Name</small
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="custom-card shadow-lg">
+            <div class="custom-card-header">
+              <img
+                src="https://source.unsplash.com/random/400x225"
+                alt="Card Image"
+              />
+            </div>
+            <div class="custom-card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-sm btn-outline-secondary read-button">Read</a>
+                <small class="text-body-secondary align-self-end"
+                  >Conference Name</small
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6">
+          <div class="custom-card shadow-lg">
+            <div class="custom-card-header">
+              <img
+                src="https://source.unsplash.com/random/400x225"
+                alt="Card Image"
+              />
+            </div>
+            <div class="custom-card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <div class="d-flex justify-content-between">
+                <a href="#" class="btn btn-sm btn-outline-secondary read-button">Read</a>
+                <small class="text-body-secondary align-self-end"
+                  >Conference Name</small
+                >
               </div>
             </div>
           </div>
